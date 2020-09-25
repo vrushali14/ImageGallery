@@ -42,7 +42,7 @@ class ViewController: UIViewController, ImageAPIDelegate, ImageDownloadedTaskDel
 
     
     func getImageDetails() {
-        
+        //get data properties for perticular selected image model
         for data in dataArray {
             
             let matchedData = data.images?.filter({ (image) -> Bool in
@@ -97,13 +97,13 @@ class ViewController: UIViewController, ImageAPIDelegate, ImageDownloadedTaskDel
     //MARK:- API Delegate
     func recievedImages(result: ResponseModel) {
         
-        
         var startIndex = 0
-        if self.searchText != "" { //search API
+        if self.searchText != "" { //search mode
             if self.pageNumber == 1 {
                 dataArray = result.data ?? []
                 startIndex = 0
             } else {
+                //append new search results to existing array
                 startIndex = dataArray.count
                 dataArray.append(contentsOf: result.data ?? [])
                 
@@ -118,6 +118,7 @@ class ViewController: UIViewController, ImageAPIDelegate, ImageDownloadedTaskDel
         let linkArray = imageArray.flatMap { $0 }
         imagelinkArray = linkArray.filter { ($0.type?.hasPrefix("image"))! }
         print(imagelinkArray)
+        //set up image downloading tasks
         self.setupImageTasks(totalImages: imagelinkArray.count, startIndex:startIndex)
         
         DispatchQueue.main.async {
@@ -225,10 +226,12 @@ class ViewController: UIViewController, ImageAPIDelegate, ImageDownloadedTaskDel
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
+        //clear search bar
         searchBar.text = ""
         searchBar.endEditing(true)
         self.searchText = ""
         self.pageNumber = 1
+        //load gallery images
         self.getGalleryImages()
     }
 }
