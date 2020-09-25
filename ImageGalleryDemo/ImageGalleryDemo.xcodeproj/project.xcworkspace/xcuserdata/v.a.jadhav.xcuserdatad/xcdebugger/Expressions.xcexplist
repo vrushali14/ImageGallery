@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.callSearchAPI():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pageNumber">
+            </PersistentString>
+            <PersistentString
+               value = "self.searchText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.setupImageTasks(totalImages:startIndex:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageTasks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.getImageDetails():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedImage">
+            </PersistentString>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.loadMoreData():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pageNumber">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.recievedImages(result:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.getImageDetails():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.setupImageTasks(totalImages:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageTasks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
